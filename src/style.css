@@ -41,6 +41,8 @@ button {
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  justify-content: center;
+
 }
 #contenedorDados{
   display: flex;
@@ -52,7 +54,7 @@ button {
 .dados{
   display: flex;
   gap: 20px;
-  margin: 20px;
+  
   
 }
 
@@ -69,6 +71,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
 
   font-size: 28px;
   font-weight: 0;
