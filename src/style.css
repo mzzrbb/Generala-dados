@@ -58,8 +58,9 @@ button {
 
 /*dado individual*/
 .dado{
-  width: 60%;
-  height: 60%;
+  width: min(14vw, 60px);
+  height: min(14vw,60px);
+  font-size: 1.2rem;
   background-color: white;
   color: black;
   border-radius: 10px;
