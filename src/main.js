@@ -14,8 +14,7 @@ for(const dado of dados){
   });
 }
 
-btnNuevoJuego.addEventListener('click',() =>{
-   
+btnNuevoJuego.addEventListener('click',() =>{  
   tiradaRestante = 3;
   tiradas.textContent = tiradaRestante;
 
@@ -29,13 +28,11 @@ btnNuevoJuego.addEventListener('click',() =>{
   
   }
   
-  
-  
 })
     
-
   
 botonTirar.addEventListener('click',()=>{
+ 
   if(tiradaRestante == 0){
     return alert('Turno terminado');
     
@@ -46,11 +43,18 @@ botonTirar.addEventListener('click',()=>{
 });
 
 
+
+
 function tirarDados(){
   for(let dado of dados){
     if(!dado.classList.contains('guardado')){
-      const valor = Math.floor(Math.random()*6)+1;
-      dado.textContent = valor;
+      dado.classList.add('tirando');
+      setTimeout(()=>{
+    
+        const valor = Math.floor(Math.random()*6)+1;
+        dado.textContent = valor;
+        dado.classList.remove('tirando');
+      },500);
       
     };
   };

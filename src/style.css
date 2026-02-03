@@ -81,5 +81,20 @@ button {
   border: 3px solid red;
 }
 
+@keyframes tirar {
+  0% {transform: rotate(0deg)
+    translateY(0PX);}
+  25% {transform: rotate(20deg)
+    translateY(-5PX);}
+  50% {transform: rotate(-20deg)
+    translateY(5PX);}
+  75% {transform: rotate(10deg)
+    translateY(-2PX);}
+  100% {transform: rotate(0deg)
+    translateY(0PX);}
+  
+}
 
-
+.dado.tirando{
+  animation: tirar 0.5s ease;
+}
